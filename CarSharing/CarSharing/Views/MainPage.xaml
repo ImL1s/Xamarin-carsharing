@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="CarSharing.Views.MainPage"
+             Title="MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15">
+            <Image Source="icon.png" Margin="0,40,0,0"></Image>
+            <Entry x:Name="accountEntry" Text="" Placeholder="帳號" FontSize="14" Margin="90,200,90,0" />
+            <Entry x:Name="passwordEntry" Text="" Placeholder="密碼" FontSize="14" Margin="90,0,90,0" IsPassword="true" />
+            <Button x:Name="loginButton" Text="登入" VerticalOptions="Center" HorizontalOptions="Center" Margin="122,0,122,0" StyleClass="Info" />
+            <Button x:Name="registerButton" Text="註冊" VerticalOptions="Center" HorizontalOptions="Center" Margin="122,0,122,0" StyleClass="Danger" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
